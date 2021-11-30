@@ -1,0 +1,16 @@
+
+    <!-- nav -->
+    <nav>
+        <a href="/home"><img src="/images/menu.png" alt="menu"></a>
+        <ul>
+            <li><a href="/home"><img src="/images/car_icon.png" alt="car"></li></a>
+            {{#if user }}
+                <li><a href="/models">Modelos</li></a>
+                <li><a href="/addModel">Añadir modelo</li></a>
+                <li><a href="/logout">Salir</li></a>
+            {{ else }}
+                <li><a href="/login">Iniciar sesion</li></a>
+                <li><a href="/register">Crear cuenta</li></a>
+            {{/if }}
+        </ul>
+    </nav>

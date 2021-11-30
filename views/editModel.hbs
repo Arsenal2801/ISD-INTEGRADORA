@@ -1,0 +1,12 @@
+
+    <!-- form -->
+    <div class="form">
+        <h1>Editar modelo</h1>
+        <form class="form-form" action="/editModel/{{ model._id }}?_method=PUT" method="POST">
+            <input type="hidden" name="_method" value="PUT">
+            <input type="text" placeholder="Nombre del modelo" name="name" value="{{ model.name }}">
+            <input type="text" placeholder="Velocidad maxima" name="speed" value="{{ model.speed }}">
+            <input type="submit" value="Guardar">
+        </form>
+    </div>
+    <img src="/images/car.png" alt="lamborghini" class="car-image">

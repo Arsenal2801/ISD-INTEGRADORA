@@ -1,0 +1,25 @@
+
+    <!-- modelos -->
+    <div class="modelos">
+
+        {{#each models}}
+        <div class="modelo">
+            <div class="caracteristicas">
+                <h2>{{ name }}</h2>
+                <p>{{ speed }}</p>
+                <div class="acciones">
+                    <form action="/deleteModel/{{ _id }}?_method=DELETE" method="POST">
+                        <input type="hidden" name="_method" value="DELETE">
+                        <input type="submit" value="Eliminar">
+                    </form>
+                    <a href="/editModel/{{ _id }}">Editar</a>
+                </div>
+            </div>
+            <div class="imagen">
+                <img src="./images/car.png" alt="">
+            </div>
+        </div>
+        {{/each}}
+
+
+    </div>
